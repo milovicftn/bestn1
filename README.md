@@ -1,3 +1,3 @@
 # bestn1
 
-https://milovicftn.github.io/moj-sajt/
+https://milovicftn.github.io/bestn1
