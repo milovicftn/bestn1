@@ -1,8 +1,5 @@
 const BOT_TOKEN = "7590377729:AAEiiPRJGEOUMcz-BCQnoSOKMPkUj96RZZY";  // Zameni sa svojim bot tokenom
-const CHAT_ID = "922442499";      // Zameni sa svojim chat ID-om
-
-const BOT_TOKEN = "tvoj_bot_token";  // Zameni sa svojim bot tokenom
-const CHAT_ID = "tvoj_chat_id";      // Zameni sa svojim chat ID-om
+const CHAT_ID = "1508351183";      // Zameni sa svojim chat ID-om
 
 function submitOrder() {
     let selectedFood = [];
