@@ -3,31 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online naručivanje hrane</title>
+    <title>ONH</title>
 </head>
 <body>
 
+    <h1>Pera zdera</h1>
     <h2>Izaberi hranu:</h2>
-    <form id="orderForm">
-        <label><input type="checkbox" name="food" value="Pizza"> Pizza</label><br>
-        <label><input type="checkbox" name="food" value="Burger"> Burger</label><br>
-        <label><input type="checkbox" name="food" value="Pasta"> Pasta</label><br>
+    <form id="orderForm" onsubmit="submitOrder(event)">
+    <label for="food">Odaberi hranu:</label><br>
+    <input type="checkbox" name="food" value="Pizza"> Pizza<br>
+    <input type="checkbox" name="food" value="Burger"> Burger<br>
+    <input type="checkbox" name="food" value="Pasta"> Pasta<br>
 
-      
+    <label for="note">Napomena:</label><br>
+    <textarea id="note" placeholder="Burger bez luka..." name="note" required></textarea><br>
 
-        <h3>Napomena:</h3>
-        <p>npr.: Bez luka  1508351183</p>
-        <textarea id="note" placeholder="Dodatne napomene..."></textarea><br>
+    <label for="phoneNumber">Broj telefona:</label><br>
+    <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
 
-        <h3>Broj telefona:</h3>
-    <input width="20px" type="tel" id="phoneNumber" placeholder="Unesite broj (+381601234567)" required>
+    <label for="address">Adresa (opciono):</label><br>
+    <textarea id="address" placeholder="Marka Markov 4" name="address"></textarea><br>
+
+    <button type="submit">Pošaljite narudžbinu</button>
+    <audio id="sendSound" src="mp3/pop2.mp3" preload="auto"></audio>
+    <img src="png/deliver.png">
+</form>
 
 
-        <button type="button" onclick="submitOrder()">Pošalji porudžbinu</button>
-    </form>
+
+       
     
     <p id="confirmation"></p>
 
     <script src="script.js"></script>
+
 </body>
 </html>
