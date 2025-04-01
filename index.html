@@ -1,53 +1,33 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OPS</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-            margin-bottom: 10px;
-        }
-        h1 {
-            color: #685;
-        }
-        </style>
+    <title>Online naručivanje hrane</title>
 </head>
 <body>
-    <h1>FOOD HOUSE</h1>
-    <p>Food House </p>
-	
-	 <p>Izaberi opciju</p>
-     <a href="dostava.html" > <img src="deliver.png" height="200"> </a>
-     
 
-     <a href="dostava.html" > <img src="g.png" height="200"> </a>
-     <p></p>
-     <a2 href="tel:+38169775796" style="background-color: #4CAF50; 
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;"
-        >pozivi</a2>
+    <h2>Izaberi hranu:</h2>
+    <form id="orderForm">
+        <label><input type="checkbox" name="food" value="Pizza"> Pizza</label><br>
+        <label><input type="checkbox" name="food" value="Burger"> Burger</label><br>
+        <label><input type="checkbox" name="food" value="Pasta"> Pasta</label><br>
 
-       
-    
-   
-   <p>
-    <div class="dugme">
-    <p> <a href= "https://github.com/milovicftn/bestn1" > GitHub Repo of this site  </a> </p> 
-   </div></p>
-<div class="footer" >
-  <p> Made by Marko 2025 </p>
-</div>
-    
+      
+
+        <h3>Napomena:</h3>
+        <p>npr.: Bez luka  1508351183</p>
+        <textarea id="note" placeholder="Dodatne napomene..."></textarea><br>
+
+        
+
+        <button type="button" onclick="submitOrder()">Pošalji porudžbinu</button>
+    </form>
+    <h3>Broj telefona:</h3>
+    <input type="tel" id="phoneNumber" placeholder="Unesite broj (npr. +381601234567)" required>
+
+    <p id="confirmation"></p>
+
+    <script src="script.js"></script>
 </body>
 </html>
